@@ -9,8 +9,8 @@ source_filename = "U:\\Engenharia\\Usuários\\Guilherme.Kubo\\0.IMPORTAR LISTA D
 
 df = pd.read_excel(source_filename, sheet_name='TABELA FINAL')
 
+#Procura por toda a string entre [] na coluna b
 df['b'] = df['DESCRIÇÃO'].str.findall('\[.*?\]')
-
 df['b'] = df['b'].str.join(', ')
 df['b'] = df['b'].str.strip('[]')
 print(df)
