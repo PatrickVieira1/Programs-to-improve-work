@@ -48,7 +48,7 @@ entry1.grid(column=2,row=1)
 
 
 regexOV = r'BR\d{7}'
-
+#Utilizar a Classe StringVar para Radiobuttons
 var2 = tk.StringVar()
 var2.set(0)
 Apertou = 0
